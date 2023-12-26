@@ -32,6 +32,8 @@ class HomeController extends Controller
             $validated['terms_conditions']=$request->terms_conditions;
         }
 
+        // return $validated;
+
         $course=Course::where('id',$validated['course_id'])->exists();
 
         if($course){
@@ -45,7 +47,8 @@ class HomeController extends Controller
                 $user=User::find($userid);
                 $stored=CourseStudent::create([
                      'course_id'=> $validated['course_id'],
-                     'user_id'=> $userid
+                     'user_id'=> $userid,
+                     'terms_conditions'=>$validated['terms_conditions']??0
                 ]);
                 if(!empty($stored)){
                     $data=[

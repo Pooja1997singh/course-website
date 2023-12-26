@@ -10,7 +10,7 @@
                             <h3 class="title">All Courses</h3>
                             <nav class="breadcrumb">
                                 <span property="itemListElement" typeof="ListItem">
-                                    <a href="index.html">Home</a>
+                                    <a href="{{route('home')}}">Home</a>
                                 </span>
                                 <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
                                 <span property="itemListElement" typeof="ListItem">Courses</span>
@@ -41,17 +41,12 @@
                                      <div class="col">
                                     <div class="courses__item shine__animate-item">
                                         <div class="courses__item-thumb">
-                                            <a href="login.html" class="shine__animate-link">
+                                            <a href="{{route('course.enroll)}}" class="shine__animate-link">
                                                 <img src="assets/img/courses/course_thumb01.jpg" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content">
-                                            <!-- <ul class="courses__item-meta list-wrap">
-                                                <li class="courses__item-tag">
-                                                    <a href="course.html">Designing</a>
-                                                </li>
-                                                <li class="avg-rating"><i class="fas fa-star"></i> (4.8 Reviews)</li>
-                                            </ul> -->
+                                            
                                             <h5 class="title"><a href="#">Web Designing Course </a></h5>
                                            <ul style="font-size: 13px; padding-left: 0.5rem;">
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course duration:</strong> 3 months | 2 hours/class</li>
@@ -74,13 +69,13 @@
                                 <div class="col">
                                     <div class="courses__item shine__animate-item">
                                         <div class="courses__item-thumb">
-                                            <a href="login.html" class="shine__animate-link">
+                                            <a href="{{route('course.enroll')}}" class="shine__animate-link">
                                                 <img src="assets/img/courses/course_thumb02.jpg" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content">
                                             
-                                            <h5 class="title"><a href="login.html">AI for Creative Professionals</a></h5>
+                                            <h5 class="title"><a href="{{route('course.enroll')}}">AI for Creative Professionals</a></h5>
                                            <ul style="font-size: 13px; padding-left: 0.5rem;">
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course duration:</strong> 3 months | 2 hours/class</li>
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course highlights:</strong> Prompt fundamentals, Text and image prompts, Composition & lighting</li>
@@ -88,7 +83,7 @@
 </ul>
                                             <div class="courses__item-bottom">
                                                 <div class="button">
-                                                    <a href="login.html">
+                                                    <a href="{{route('course.enroll')}}">
                                                         <span class="text">Download Course</span>
                                                         <i class="flaticon-arrow-right"></i>
                                                     </a>
@@ -101,13 +96,13 @@
                                 <div class="col">
                                     <div class="courses__item shine__animate-item">
                                         <div class="courses__item-thumb">
-                                            <a href="login.html" class="shine__animate-link">
+                                            <a href="{{route('course.enroll')}}" class="shine__animate-link">
                                                 <img src="assets/img/kl.jpg" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content">
                                            
-                                            <h5 class="title"><a href="login.html"> Wordpress Developer Course</a></h5>
+                                            <h5 class="title"><a href="{{route('course.enroll')}}"> Wordpress Developer Course</a></h5>
                                            <ul style="font-size: 13px; padding-left: 0.5rem;">
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course duration:</strong> 3 months | 2 hours/class</li>
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course highlights:</strong> WordPress fundamentals | Customizing themes | Integrating plugins</li>
@@ -115,7 +110,7 @@
 </ul>
                                             <div class="courses__item-bottom">
                                                 <div class="button">
-                                                    <a href="login.html">
+                                                    <a href="{{route('course.enroll')}}">
                                                         <span class="text">Download Course</span>
                                                         <i class="flaticon-arrow-right"></i>
                                                     </a>
@@ -128,7 +123,7 @@
                                 <div class="col">
                                     <div class="courses__item shine__animate-item">
                                         <div class="courses__item-thumb">
-                                            <a href="login.html" class="shine__animate-link">
+                                            <a href="{{route('course.enroll')}}" class="shine__animate-link">
                                                 <img src="assets/img/courses/course_thumb10.jpg" alt="img">
                                             </a>
                                         </div>
@@ -142,7 +137,7 @@
 </ul>
                                                   <div class="courses__item-bottom">
                                                 <div class="button">
-                                                    <a href="login.html">
+                                                    <a href="{{route('course.enroll')}}">
                                                         <span class="text">Download Course</span>
                                                         <i class="flaticon-arrow-right"></i>
                                                     </a>
@@ -155,13 +150,13 @@
                                 <div class="col">
                                     <div class="courses__item shine__animate-item">
                                         <div class="courses__item-thumb">
-                                            <a href="login.html" class="shine__animate-link">
+                                            <a href="{{route('course.enroll)}}" class="shine__animate-link">
                                                 <img src="assets/img/courses/course_thumb08.jpg" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content">
                                            
-                                            <h5 class="title"><a href="login.html">Pro Web & Graphics Design</a></h5>
+                                            <h5 class="title"><a href="{{route('course.enroll)}}">Pro Web & Graphics Design</a></h5>
                                           <ul style="font-size: 13px; padding-left: 0.5rem;">
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course duration:</strong> 8 months | 2 hours/class</li>
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course highlights:</strong>   Design principles, HTML semantics, JavaScript functions</li>
@@ -169,7 +164,7 @@
 </ul>
                                                  <div class="courses__item-bottom">
                                                 <div class="button">
-                                                    <a href="login.html">
+                                                    <a href="{{route('course.enroll)}}">
                                                         <span class="text">Download Course</span>
                                                         <i class="flaticon-arrow-right"></i>
                                                     </a>
@@ -183,13 +178,13 @@
                                                          <div class="col">
                                     <div class="courses__item shine__animate-item">
                                         <div class="courses__item-thumb">
-                                            <a href="login.html" class="shine__animate-link">
+                                            <a href="{{route('course.enroll)}}" class="shine__animate-link">
                                                 <img src="assets/img/courses/dm.webp" alt="img">
                                             </a>
                                         </div>
                                         <div class="courses__item-content">
                                             
-                                            <h5 class="title"><a href="login.html">Digital Marketing Course</a></h5>
+                                            <h5 class="title"><a href="{{route('course.enroll)}}">Digital Marketing Course</a></h5>
 <ul style="font-size: 13px; padding-left: 0.5rem;">
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course duration:</strong> 8 months | 2 hours/class</li>
 <li style="border-bottom: 1px dashed #ccc; padding-bottom: 6px; padding-top: 6px;"><strong>Course highlights:</strong>    Fundamentals of digital marketing, PPC, SEO, analytics, 360-degree campaign planning</li>
@@ -197,7 +192,7 @@
 </ul>
                                             <div class="courses__item-bottom">
                                                 <div class="button">
-                                                    <a href="login.html">
+                                                    <a href="{{route('course.enroll)}}">
                                                         <span class="text">Download Course</span>
                                                         <i class="flaticon-arrow-right"></i>
                                                     </a>

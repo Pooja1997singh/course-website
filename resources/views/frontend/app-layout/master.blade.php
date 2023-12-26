@@ -57,7 +57,7 @@
                             <h6 style=" float: left;"><span style="font-size: 22px;float: left;">  <i class="bx bx-phone"></i></span> +91 96676 63113</h6>
                         </li>
                                     <li class="header-btn login-btn">
-                                        <a href="login.html" class="btn">Get Started</a>
+                                        <a href="{{route('course.enroll')}}" class="btn">Get Started</a>
                                     </li>
                                 </ul>
                             </div>
@@ -69,7 +69,7 @@
                         <nav class="tgmobile__menu-box">
                             <div class="close-btn"><i class="tg-flaticon-close-1"></i></div>
                             <div class="nav-logo">
-                             <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo" style="width: 130px"></a>
+                             <a href="{{route('home')}}"><img src="assets/img/logo/logo.png" alt="Logo" style="width: 130px"></a>
                             </div>
                             <div class="tgmobile__search">
                                 <form action="#">

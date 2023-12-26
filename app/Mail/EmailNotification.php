@@ -27,7 +27,7 @@ class EmailNotification extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Course Enrollment',
+            subject: $this->data['subject'],
         );
     }
 

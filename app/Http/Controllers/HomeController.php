@@ -38,6 +38,7 @@ class HomeController extends Controller
 
         if($course){
             $userid=User::create([
+               
                 'name'=>$validated['name'],
                 'email'=>$validated['email'],
                 'mobile_number'=>$validated['mobile_number']
@@ -52,14 +53,14 @@ class HomeController extends Controller
                 ]);
                 if(!empty($stored)){
                     $data=[
-                        
+                        'subject'=>"Confirmation of Registration for Live Project Training",
                         "name"=>$user->name,
                         "email"=>$user->email,
                         "mobile_number"=>$user->mobile_number,
                         "course"=>Course::where('id',$validated['course_id'])->value('course_name')
                     ];
 
-                    Mail::to("pooja20nov1997@gmail.com")
+                    Mail::to(env('MAIL_USERNAME')??"dotfy9@gmail.com")
                     ->queue((new EmailNotification($data))->onQueue('emails'));
                   
 				    

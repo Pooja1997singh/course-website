@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\course;
 use App\Models\CourseStudent;
 use App\Models\User;
+use App\Mail\EmailNotification;
+use Mail;
 
 class HomeController extends Controller
 {
@@ -40,11 +42,26 @@ class HomeController extends Controller
             ])->id;
 
             if($userid){
+                $user=User::find($userid);
                 $stored=CourseStudent::create([
                      'course_id'=> $validated['course_id'],
                      'user_id'=> $userid
                 ]);
                 if(!empty($stored)){
+                    $data=[
+                        
+                        "name"=>$user->name,
+                        "email"=>$user->email,
+                        "mobile_number"=>$user->mobile_number,
+                        "course"=>Course::where('id',$validated['course_id'])->value('course_name')
+                    ];
+
+                    Mail::to("pooja20nov1997@gmail.com")
+                    ->queue((new EmailNotification($data))->onQueue('emails'));
+                  
+				    
+
+                 
                     session()->flash('success', 'Record created successfully!');
                     return redirect()->back();
                     

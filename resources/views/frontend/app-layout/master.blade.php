@@ -42,8 +42,8 @@
                                     <li><a href="{{route('home')}}">Home</a></li>
                                     <li><a href="{{route('courses')}}">Course</a></li>
                                    <!--  <li><a href="#">Portfolio</a></li> -->
-                                    <li><a href="placement.html">Placement</a></li>
-                                    <li class="active"><a href="hire.html">Hire From Us </a></li>
+                                    <li><a href="{{route('placement')}}">Placement</a></li>
+                                    <li class="active"><a href="{{route('hire')}}">Hire From Us </a></li>
                                     
                                    
                                   

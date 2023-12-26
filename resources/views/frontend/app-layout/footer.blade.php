@@ -6,30 +6,17 @@
         <div class="footer__top">
             <div class="container">
                 <div class="row">
-  <!--                   <div class="col-xl-12 col-lg-12 col-md-6">
-                        <div class="footer__widget">
-                            <div class="logo mb-35">
-                                <a href="index.html"><img src="assets/img/logo/secondary_logo.svg" alt="img"></a>
-                            </div>
-                            <div class="footer__content">
-                                <p style="    font-family: 'gordita';">AVC Dotfy LLP</p>
-                                <ul class="list-wrap">
-                                    <li style="    font-family: 'gordita';">C-157, Janak Community Center Janakpuri , New Delhi, 110056</li>
-                                  
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
+ 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <div class="footer__widget">
                             <h4 class="footer__widget-title">Useful Links</h4>
                             <div class="footer__link">
                                <p>
-                                    <a href="index.html" class="text-white">Home</a>&nbsp;|&nbsp;
-                                    <a href="about-us.html" class="text-white">About Us</a>&nbsp;|&nbsp;
-                                    <a href="contact.html" class="text-white">Contact Us</a>&nbsp;|&nbsp;
-                                    <a href="courses.html" class="text-white">Courses</a>&nbsp;|&nbsp;
-                                    <a href="placement.html" class="text-white">Placement</a>&nbsp;|&nbsp;
+                                    <a href="{{route('home')}}" class="text-white">Home</a>&nbsp;|&nbsp;
+                                    <a href="{{route('aboutus')}}" class="text-white">About Us</a>&nbsp;|&nbsp;
+                                    <a href="{{route('contact')}}" class="text-white">Contact Us</a>&nbsp;|&nbsp;
+                                    <a href="{{route('courses')}}" class="text-white">Courses</a>&nbsp;|&nbsp;
+                                    <a href="{{route('placement')}}" class="text-white">Placement</a>&nbsp;|&nbsp;
                                    
                                     
                                 </p>
@@ -42,10 +29,10 @@
                             <h4 class="footer__widget-title">Company Links</h4>
                             <div class="footer__link">
                                <p>
-                                    <a href="privacy.html" class="text-white">Privacy Policy</a>&nbsp;|&nbsp;
-                                    <a href="terms.html" class="text-white">Term & Condition</a>&nbsp;|&nbsp;
-                                    <a href="disclaimer.html" class="text-white">Disclaimer</a>&nbsp;|&nbsp;
-                                    <a href="refund.html" class="text-white">Refund Policy</a>&nbsp;|&nbsp;
+                                    <a href="{{route('privacy')}}" class="text-white">Privacy Policy</a>&nbsp;|&nbsp;
+                                    <a href="{{route('terms')}}" class="text-white">Term & Condition</a>&nbsp;|&nbsp;
+                                    <a href="{{route('disclaimer')}}" class="text-white">Disclaimer</a>&nbsp;|&nbsp;
+                                    <a href="{{route('refund')}}" class="text-white">Refund Policy</a>&nbsp;|&nbsp;
                                    
                                    
                                     
